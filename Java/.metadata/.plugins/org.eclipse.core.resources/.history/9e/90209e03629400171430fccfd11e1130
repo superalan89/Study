@@ -1,0 +1,39 @@
+package memo;
+
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+//데이터를 저장하는 저장소를 관리하는 객체
+	public class ModelWithDB {
+		
+		Connection con = null;
+		
+		// 생성자
+		public ModelWithDB(){
+			
+		}
+		// 쓰기
+		public void create(Memo memo){
+
+		}
+		// 읽기
+		public Memo read(int no){
+			Memo memo = new Memo();
+			return memo;
+		}
+		// 수정
+		public void update(Memo memo){
+			
+		}
+		// 삭제
+		public void delete(int no){
+			
+		}
+		// 목록
+		public ArrayList<Memo> getList(){
+			ArrayList<Memo> list = new ArrayList<>();
+			
+			return list;
+		}
+	}

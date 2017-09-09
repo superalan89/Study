@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class MemoTest {
+	ArrayList<Memo> memoList = new ArrayList<>();
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		MemoTest memo = new MemoTest();
+		
+		String command = "";
+	}
+	
+	while(!command.equals("exit")) {
+		System.out.println("------------입력해주세요-----------");
+		System.out.println("n : 새로만들기, r : 읽기, e : 수정하기, d : 삭제하기, l : 목록보기");
+		System.out.println("exit : 종료");
+		System.out.println("----------------------------------");
+	}
+}

@@ -1,0 +1,89 @@
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+// 데이터를 저장하는 저장소를 관리하는 객체
+public class Model {
+   private static final String DATABASE = "c:/worspaces/java/database";
+   private final String DB_FILE = "memo.txt";
+   ArrayList<Memo> memoList = new ArrayList<>();
+   
+   // 전체 메모를 저장하는 저장소
+   ArrayList<Memo> list = new ArrayList<> ();
+   
+   // 마지막 글번호
+   int lastIndex = 0;
+   
+   public Model() {
+	   // new 하는 순간 이 영역이 실행된다.
+	   File dir = new File(DATABASE);
+	   if(dir.exists())){
+		   dir.mkdir(); // 경로상에 디텍토리가 없으면 자동생성
+	   }
+	   File file = new File(DATABASE + File.separator + DB_FILE);
+   }
+   
+   // 생성
+   public void create(Memo memo) {
+      // 글번호
+	   memo.no = memoList.size() + 1;
+      // 글하나를 저장한 메모리 저장소로 이동
+	   list.add(memo);
+   }
+   
+   // 메모를 검색후 해당 정보를 보여줌
+   public void showList() {
+      for(Memo item : memoList) {
+         System.out.print("NO : " + item.no);
+         System.out.println("  ||  Author : " + item.name);
+      }
+   }
+   
+   // 해당 메모를 삭제 (삭제를 위해 remove 유틸을 활용)
+   public void deleteList(Scanner scanner) {
+      System.out.print("글 번호 입력 : ");
+      String number = scanner.nextLine();
+      memoList.remove(Integer.parseInt(number) - 1);
+      
+      for(int i = Integer.parseInt(number) - 1; i < memoList.size(); i++) {
+         memoList.get(i).no--;
+      }
+   }
+   
+   // 메모를 수정
+   public void updateList(Scanner scanner) {
+      System.out.print("글 번호 입력 : ");
+      int no = Integer.parseInt(scanner.nextLine()) - 1;
+      
+      System.out.println("이름을 입력하세요 : ");
+      memoList.get(no).name = scanner.nextLine();
+      System.out.println("내용을 임력하세요 : ");
+      memoList.get(no).content = scanner.nextLine();
+      
+   }
+   // 메모 목록을 표시
+   public void readList(Scanner scanner) {
+      System.out.print("글 번호 입력 : ");
+      int no = Integer.parseInt(scanner.nextLine()) - 1;
+      
+      Memo imsi = new Memo();
+      imsi = memoList.get(no);
+      
+      System.out.println("NO : " + imsi.no);
+      System.out.println("Author : " + imsi.name);
+      System.out.println("Content : " + imsi.content);
+      
+      SimpleDateFormat sdf = new SimpleDateFormat("yyy-MM-dd hh:mm:ss"); // SimpleDataFormat 유틸을 활용하여 날짜 양식을 표시
+      String formattedDate = sdf.format(imsi.datetime);
+      System.out.println("Date : " + formattedDate);
+   }
+}
+
+// 개별 글 한개 한개를 저장하는 클래스
+class Memo {
+   int no;
+   String name;
+   String content;
+   long datetime;
+}

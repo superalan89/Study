@@ -1,0 +1,28 @@
+import java.util.Random;
+
+public class AlgoPractice {
+	public int[] getLottoNumbers() {
+	    int[] result = new int[6];     
+		Random random = new Random();
+	    
+       for(int i = 0; i < 6; i++) {
+    	   
+    	   // random 함수에서 발생되는 난수는 중복될 수 잇다
+    	   // 아래에제에서 결과값이 처음에 33이 나왔을 경우
+    	   // 두번째 케이스에서도 33이 나올 수 있다.
+    	   
+    	   int temp = random.nextInt(45) + 1;
+    	   result[i] = temp;
+    	   
+    	   
+    	   // 중복값에 대한 예외처리
+    	   for(int j = 0; j < i; j++) {
+    		   if (temp == result[j]) {
+    			   
+    		   }
+    	   }
+       }
+	    
+		return result;
+	}
+}

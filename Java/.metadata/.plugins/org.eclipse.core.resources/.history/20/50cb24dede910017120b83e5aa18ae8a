@@ -1,0 +1,52 @@
+
+public class Main {
+	//마트에서 물건을 사고 거스름돈 계산
+	public static void main(String args) {
+		Calc newClass = new Calc();
+		newClass.calc(10000, 3750);
+	}
+	
+	public void calc(int money, int price) {
+		//총 거스름돈
+		/*
+		int change = money - price;
+		int a,b,c,d,e,f;
+		a = (money - price) /5000;
+		b = (money - price /5000;
+		
+		
+		
+	*/
+		
+		int change = money - price;
+		
+	    System.out.printf("거스름돈 = %d \n", change);
+	    System.out.printf("5000원 = %d \n", change/5000);
+	    change = change % 5000;
+	    int temp = change % 1000;
+	    System.out.printf("1000원 = %d \n", temp);
+	    change = change % 1000;
+	    temp = change / 5000;
+		
+		
+		
+		
+		System.out.println(a-b);
+		//오천원
+		System.out.println(a/500);
+		//천원
+		System.out.println();
+		//오백원
+		System.out.println();
+		//백원
+		System.out.println();
+		//오십원
+		System.out.println();
+		//십원
+		System.out.println();
+		
+		System.out.printf("거스름돈 = %d \n", gross);
+	}
+	
+	
+}

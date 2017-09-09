@@ -1,0 +1,29 @@
+
+public class Main {
+	//마트에서 물건을 사고 거스름돈 계산
+	public void main(String args) {
+		//calc(10000, 3750)
+		int a = 10000;
+		int b = 3750;		
+	}
+	
+	public void calc(int money, int price) {
+		//총 거스름돈
+		System.out.println();
+		//오천원
+		System.out.println();
+		//천원
+		System.out.println();
+		//오백원
+		System.out.println();
+		//백원
+		System.out.println();
+		//오십원
+		System.out.println();
+		//십원
+		System.out.println();
+		
+	}
+	
+	
+}

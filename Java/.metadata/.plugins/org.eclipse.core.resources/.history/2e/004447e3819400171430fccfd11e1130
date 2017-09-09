@@ -1,0 +1,30 @@
+package memo2;
+
+import java.util.Scanner;
+
+
+
+public class Controller {
+
+	public static boolean RUN = true;
+	
+	View view;
+	
+	public Controller() {
+		view = new View();
+	}
+	
+	public void run() {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		while(true) {
+			view.intro();	
+			scanner.nextLine();
+		}
+		
+	}
+		
+}
+

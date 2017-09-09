@@ -1,0 +1,10 @@
+
+public class TestMain {
+
+	public static void main(String[] args) {
+		Test02 test02 = new Test02();
+		test02.run(" ", 5);
+		test02.run(mark, lines);
+	}
+
+}

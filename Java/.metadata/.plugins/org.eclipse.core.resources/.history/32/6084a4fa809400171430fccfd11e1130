@@ -1,0 +1,15 @@
+package memo2;
+
+public class Controller {
+	
+	View view;
+	
+	public Controller() {
+		view = new View();
+	}
+	
+	public void run() {
+		view.intro();
+	}
+
+}

@@ -1,0 +1,19 @@
+package memo2;
+
+import java.util.Scanner;
+
+public class Controller {
+	
+	View view;
+	
+	public Controller() {
+		view = new View();
+	}
+	
+	public void run() {
+		view.intro();
+		Scanner scanner = new Scanner(System.in);
+		
+	}
+
+}

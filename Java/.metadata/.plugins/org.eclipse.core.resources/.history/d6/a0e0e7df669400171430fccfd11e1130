@@ -1,0 +1,76 @@
+package memo;
+
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+//데이터를 저장하는 저장소를 관리하는 객체
+	public class ModelWithDB {
+		
+		Connection con = null;
+		
+		// 생성자
+		public ModelWithDB(){
+			
+			// 특정 컴퓨터를 찾기위한 주소 체계
+			// 아이피 = 213.12.123.132
+			// url = naver.com
+			// 특정 프로그램에 할당되는 번지
+			// port = 1 ~ 6만번대..
+			//        2000번대 밑은 이미 표준으로 사용되고 있다.
+			
+			// 소켓
+			// 아이피 + 포트
+			
+			
+			// 표준 프로토콜
+			//http:// 아이피(주소) : 포트(80)
+			
+			// 특정 프로그램에 액세스 하기위한 주소체계
+			//프로토콜이름://아이피(주소) : 포트
+			
+			
+			
+		}
+		// 쓰기
+		public void create(Memo memo){
+			// 1. 데이터베이스 연결
+			String url = "jdbc:mysql://localhost:3306/memo";
+			
+			try{
+				Class.forName("com.mysql.jdbc.Driver"); // 드라이버를 동적으로 로드
+				con = DriverManager.getConnection(url
+						, "root"
+						, "1231");
+				System.out.println("접속되었습니다.");
+			} catch (Exception e) {
+				System.out.println("접속오류");
+				e.printStackTrace();
+			}
+			
+			// 2. 쿼리를 실행
+			
+			// 3. 
+		}
+		// 읽기
+		public Memo read(int no){
+			Memo memo = new Memo();
+			return memo;
+		}
+		// 수정
+		public void update(Memo memo){
+			
+		}
+		// 삭제
+		public void delete(int no){
+			
+		}
+		// 목록
+		public ArrayList<Memo> getList(){
+			ArrayList<Memo> list = new ArrayList<>();
+			
+			return list;
+		}
+	}

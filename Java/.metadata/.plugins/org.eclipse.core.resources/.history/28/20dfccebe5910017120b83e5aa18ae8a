@@ -1,0 +1,9 @@
+
+public class CalcChange {
+	int changeArray[] = {5000, 1000, 500, 100, 50, 10};
+	
+	public void calc(int pay, int buy) {
+		int change = pay - buy;
+		System.out.println("ds");
+	}
+}

@@ -1,0 +1,42 @@
+
+class Change {
+	int changeArray[] = {100000, 50000, 10000, 5000, 1000, 500, 100, 50, 10};
+	
+	public static void main(String[] args) {
+		Change change = new Change();
+		change.cal(105000, 92430);
+	}
+	
+	// 의미있고 실행가능한 최소한의 코드를 지향
+	// 함수를 세분화
+	
+	public void cal(int pay, int price) {	
+		int gross = pay - price;
+		showChange("총 거스름돈", gross);
+		System.out.println();
+		
+		for(int money : changeArray) {
+			if(gross / money == 0) 
+				continue;
+			showChange(money, gross/money);
+			gross %= money;
+		}
+		
+		/*
+		int count = 0;
+		while(count < changeArray.length) {
+			int money = changeArray[count];
+			System.out.printf(money+ "원 : %d 개 \n", gross / money);
+			gross %= money;
+		}
+		*/
+	}
+	
+	public void showChange(String str, int i) {
+		System.out.printf("%s : %d원 \n", str, i);
+	}
+	
+	public void showChange(int money, int i) {
+		System.out.printf("%s : %d원 \n", money, i);
+	}
+}
