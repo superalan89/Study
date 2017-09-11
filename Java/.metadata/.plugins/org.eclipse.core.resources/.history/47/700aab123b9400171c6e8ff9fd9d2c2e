@@ -1,9 +1,0 @@
-
-public class abcdefg {
-	String compareIntegers(String a, String b) {
-	    if (Integer.parseInt(a) < Integer.parseInt(b)
-	       return "less";
-	    
-	}   
-
-}
