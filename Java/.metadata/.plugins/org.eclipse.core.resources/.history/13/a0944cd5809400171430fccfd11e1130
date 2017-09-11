@@ -1,7 +1,0 @@
-package memo2;
-
-public class Controller {
-	
-	View view;
-
-}

@@ -1,5 +1,0 @@
-package memo2;
-
-public class Model {
-	List<memo> data = new ArrayList<>();
-}
