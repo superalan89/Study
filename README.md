@@ -6,7 +6,7 @@
 
 2. [OOP Solid](https://github.com/superalan89/Study/tree/master/Java/Solid)
 
-3. [For문 및 ControlFlow](https://github.com/superalan89/Study/tree/master/Java/database)
+3. [For문 및 ControlFlow](https://github.com/superalan89/Study/tree/master/Java/ControlFlow)
 
 4. [String 함수종류 및 아나그램 알고리즘](https://github.com/superalan89/Study/tree/master/Java/AlgoMath)
 
