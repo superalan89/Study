@@ -21,8 +21,8 @@ HTML에서 많이 사용하는 정렬 방식과 유사하여 실용적
 
 
 ## 계산기 실습
-1. 세로화면
-![Alt text](/https://github.com/superalan89/Study/Calculator01.png)
+1. 세로화면<br>
+![Alt text](https://github.com/superalan89/Study/tree/master/Android/BasicLayout/img/Calculator01.png)
 
-2. 가로화면
-![Alt text](/https://github.com/superalan89/Study/Calculator02.png)
+2. 가로화면<br>
+![Alt text](https://github.com/superalan89/Study/tree/master/Android/BasicLayout/img/Calculator02.png)

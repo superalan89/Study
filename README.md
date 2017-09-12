@@ -28,4 +28,4 @@
 
 ## Android
 
-1. [레이아웃 개념 및 계산기 실습](https://github.com/superalan89/Study/tree/master/Java/BasicLayout)
+1. [레이아웃 개념 및 계산기 실습](https://github.com/superalan89/Study/tree/master/Android/BasicLayout)
