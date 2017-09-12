@@ -22,9 +22,7 @@ HTML에서 많이 사용하는 정렬 방식과 유사하여 실용적
 
 ## 계산기 실습
 1. 세로화면<br>
-![Alt text](/Android/BasicLayout/img/Calculator01.PNG){:height="50%" width="50%"}
+<img src="https://github.com/superalan89/Study/blob/master/Android/BasicLayout/img/Calculator01.PNG" alt="계산기" width="300">
 
 2. 가로화면<br>
-![Alt text](/Android/BasicLayout/img/Calculator02.PNG)
-
-<img src="https://github.com/superalan89/Study/blob/master/Android/BasicLayout/img/Calculator01.PNG" alt="alt text" width="300" height="300">
+<img src="https://github.com/superalan89/Study/blob/master/Android/BasicLayout/img/Calculator02.PNG" alt="계산기" width="600">
