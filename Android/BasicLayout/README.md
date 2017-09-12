@@ -22,7 +22,7 @@ HTML에서 많이 사용하는 정렬 방식과 유사하여 실용적
 
 ## 계산기 실습
 1. 세로화면<br>
-![계산기](/Android/BasicLayout/img/Calculator01.PNG | width=100)
+![Alt text](/Android/BasicLayout/img/Calculator01.PNG | width=100)
 
 2. 가로화면<br>
-![계산기](/Android/BasicLayout/img/Calculator02.PNG | width=100)
+![Alt text](/Android/BasicLayout/img/Calculator02.PNG | width=100)
