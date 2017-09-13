@@ -219,15 +219,26 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
+
+
+
         if (v.getId() == btn0.getId()) {
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("0");
             }else {
                 inputViewText.setText(inputViewText.getText() + "0");
+            }else(inputViewText.getText()) {
+                inputViewText.setText(inputViewText.getText());
             }
             input = input * 10 + 0;
             outputViewText.setText("");
-        }else if (v.getId() == btn1.getId()) {
+        }
+
+
+
+
+
+        else if (v.getId() == btn1.getId()) {
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("1");
             }else {
@@ -299,7 +310,40 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             }
             input = input * 10 + 9;
             outputViewText.setText("");
-        }else if (v.getId() == btn_plus.getId()) {
+        }else if (v.getId() == btn_parleft.getId()) {
+            if(inputViewText.getText().equals("0")) {
+                inputViewText.setText("(");
+            }else {
+                inputViewText.setText(inputViewText.getText() + "(");
+            }
+            input = input * 10 + '(';
+            outputViewText.setText("");
+        }else if (v.getId() == btn_parright.getId()) {
+            if(inputViewText.getText().equals("0")) {
+                inputViewText.setText(")");
+            }else {
+                inputViewText.setText(inputViewText.getText() + ")");
+            }
+            input = input * 10 + ')';
+            outputViewText.setText("");
+
+            // .을 한번 찍으면 뒤에 나오면 안돼
+
+        }else if (v.getId() == btn_point.getId()) {
+            String imsi = inputViewText.getText() + "";
+            if(imsi.equals("") || imsi.equals("0")) {
+                return;
+            }
+            String imsi2 = imsi.charAt(imsi.length() - 1) + "";
+            if(imsi2.equals(".")) {
+                inputViewText.setText(imsi.substring(0, imsi.length() - 1) +".");
+            } else {
+                inputViewText.setText(inputViewText.getText() + ".");
+            }
+            calc();
+            outputViewText.setText("");
+        }
+        else if (v.getId() == btn_plus.getId()) {
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
