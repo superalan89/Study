@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#ffbc40</color>
+
+    // <!--여기서 부터 작업 색상표 -->
+    <color name="mygray">#949494</color>
+    <color name="mygreen">#a7ff4f</color>
+    <color name="myorange">#ffb062</color>
 </resources>
