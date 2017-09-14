@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="360"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fillAfter="true"
+    android:duration="3000"
+    >
+
+<translate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromXDelta="-300"
+    android:fromYDelta="300"
+    android:toXDelta="0"
+    android:toYDelta="0"
+    android:fillAfter="true"
+    android:duration="3000"> <!-- 시간값 = 1/1000 초 -->
+    <!--
+    fillAfter = true일 경우 애니메이션의 종료위치에 고정
+                , false 일 경우 원래 위치로 복귀 (default = false)
+    duration = 1/1000초
+    -->
+</translate>
+</rotate>
+</set>

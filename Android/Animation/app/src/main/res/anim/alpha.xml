@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0"
+    android:fillAfter="true"
+    android:duration="3000"> <!-- 시간값 = 1/1000 초 -->
+    <!--
+    fillAfter = true일 경우 애니메이션의 종료위치에 고정
+                , false 일 경우 원래 위치로 복귀 (default = false)
+    duration = 1/1000초
+    -->
+</alpha>
