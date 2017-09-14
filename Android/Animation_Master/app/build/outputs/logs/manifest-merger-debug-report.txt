@@ -1,0 +1,109 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:2:1-26:12
+	package
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:5:5-24:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\super\.android\build-cache\628c8882dd74d243aa0c34920c4970291303b354\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\super\.android\build-cache\a3cae264672736cbe4b5edc95d4be6ec807a78be\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\super\.android\build-cache\b1e871c37811460608292192bf717f972811ab62\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\super\.android\build-cache\b658a9c7f1a17bde39c7467407c8469a41a4072c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\super\.android\build-cache\e7c6fb8500c6bab2d2c6e7679ff1dd398e1ededb\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\c55a23318bf3ac8e85a19dd52addff169ce7aa4e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\74752a6d8ea9755f27d25b29ff2ceeffb03242ff\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\super\.android\build-cache\b3962b8b7b594bf1464d37c20705f5999c455ad4\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\super\.android\build-cache\dd1d8c4de2aa034e7ca9e12f58a28d354b07dd11\output\AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:8:9-41
+	android:supportsRtl
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:10:9-35
+	android:roundIcon
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:9:9-54
+	android:allowBackup
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:6:9-35
+	android:icon
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:7:9-43
+	android:theme
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.veryworks.android.basiclayout.MainActivity
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:12:9-17:20
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:13:13-16:29
+action#android.intent.action.MAIN
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:15:17-77
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:15:27-74
+activity#com.veryworks.android.basiclayout.FrameActivity
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:18:9-51
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:18:19-48
+activity#com.veryworks.android.basiclayout.LinearActivity
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:19:9-52
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:19:19-49
+activity#com.veryworks.android.basiclayout.GridActivity
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:20:9-50
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:20:19-47
+activity#com.veryworks.android.basiclayout.RelativeActivity
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:21:9-54
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:21:19-51
+activity#com.veryworks.android.basiclayout.Calculator
+ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:22:9-23:71
+	android:configChanges
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:23:13-59
+	android:name
+		ADDED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml:22:19-45
+uses-sdk
+INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\super\.android\build-cache\628c8882dd74d243aa0c34920c4970291303b354\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\super\.android\build-cache\a3cae264672736cbe4b5edc95d4be6ec807a78be\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\super\.android\build-cache\b1e871c37811460608292192bf717f972811ab62\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\super\.android\build-cache\b658a9c7f1a17bde39c7467407c8469a41a4072c\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\super\.android\build-cache\e7c6fb8500c6bab2d2c6e7679ff1dd398e1ededb\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\c55a23318bf3ac8e85a19dd52addff169ce7aa4e\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\74752a6d8ea9755f27d25b29ff2ceeffb03242ff\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\super\.android\build-cache\b3962b8b7b594bf1464d37c20705f5999c455ad4\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\super\.android\build-cache\dd1d8c4de2aa034e7ca9e12f58a28d354b07dd11\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+		INJECTED from C:\workspaces\Study\Android\Animation_Master\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\super\.android\build-cache\628c8882dd74d243aa0c34920c4970291303b354\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\super\.android\build-cache\a3cae264672736cbe4b5edc95d4be6ec807a78be\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\super\.android\build-cache\b1e871c37811460608292192bf717f972811ab62\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\super\.android\build-cache\b658a9c7f1a17bde39c7467407c8469a41a4072c\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\super\.android\build-cache\e7c6fb8500c6bab2d2c6e7679ff1dd398e1ededb\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\c55a23318bf3ac8e85a19dd52addff169ce7aa4e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\super\.android\build-cache\74752a6d8ea9755f27d25b29ff2ceeffb03242ff\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\super\.android\build-cache\b3962b8b7b594bf1464d37c20705f5999c455ad4\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:appcompat-v7:25.3.1] C:\Users\super\.android\build-cache\bd9c731f92303d07068c500f59be008fe61992e6\output\AndroidManifest.xml:26:9-47

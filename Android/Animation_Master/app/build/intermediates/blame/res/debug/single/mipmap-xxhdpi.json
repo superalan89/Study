@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\workspaces\\Study\\Android\\Animation_Master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "C:\\workspaces\\Study\\Android\\Animation_Master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    }
+]

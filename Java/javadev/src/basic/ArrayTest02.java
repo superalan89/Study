@@ -20,6 +20,6 @@ public class ArrayTest02 {
 			}
 			System.out.println(total + "\t" + (total / score[row].length));
 		}
-		System.out.println("============================================");
+		
 	}
 }

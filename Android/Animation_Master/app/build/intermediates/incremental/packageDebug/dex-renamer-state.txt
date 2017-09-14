@@ -1,0 +1,7 @@
+#Thu Sep 14 20:33:46 KST 2017
+base.0=C\:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bb7be2f43264293922ad4457c46156e48abb4037
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_97f2fb54071f0bcda9b049254d81a213612252a5\\classes.dex
+base.1=C\:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_97f2fb54071f0bcda9b049254d81a213612252a5
+file.0=C\:\\workspaces\\Study\\Android\\Animation_Master\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_bb7be2f43264293922ad4457c46156e48abb4037\\classes.dex

@@ -223,20 +223,14 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
 
 
         if (v.getId() == btn0.getId()) {
-            if(inputViewText.getText().equals("0")) {
+            if (inputViewText.getText().equals("0")) {
                 inputViewText.setText("0");
-            }else {
+            } else {
                 inputViewText.setText(inputViewText.getText() + "0");
-            }else(inputViewText.getText()) {
-                inputViewText.setText(inputViewText.getText());
             }
             input = input * 10 + 0;
             outputViewText.setText("");
         }
-
-
-
-
 
         else if (v.getId() == btn1.getId()) {
             if(inputViewText.getText().equals("0")) {
