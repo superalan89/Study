@@ -16,13 +16,16 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
     private Button btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn_plus, btn_minus, btn_multiple, btn_devide, btn_equal, btn_clear, btn_parleft, btn_parright, btn_point;
     private TextView inputViewText, outputViewText;
 
-    int result = 0;
-    int input = 0;
+    double result = 0.0;
+    double input = 0.0;
     int calcCheck = 1;
     // calcCheck == 1   +
     // calcCheck == 2   -
     // calcCheck == 3   *
     // calcCheck == 4   /
+    boolean check = false;
+    // false == 계산 안한거
+    // true == 계산 한거
 
 
     @Override
@@ -219,20 +222,25 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-
-
-
         if (v.getId() == btn0.getId()) {
-            if (inputViewText.getText().equals("0")) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
+            if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("0");
-            } else {
+            }else {
                 inputViewText.setText(inputViewText.getText() + "0");
             }
             input = input * 10 + 0;
             outputViewText.setText("");
-        }
-
-        else if (v.getId() == btn1.getId()) {
+        }else if (v.getId() == btn1.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("1");
             }else {
@@ -241,6 +249,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 1;
             outputViewText.setText("");
         }else if (v.getId() == btn2.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("2");
             }else {
@@ -249,6 +262,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 2;
             outputViewText.setText("");
         }else if (v.getId() == btn3.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("3");
             }else {
@@ -257,6 +275,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 3;
             outputViewText.setText("");
         }else if (v.getId() == btn4.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("4");
             }else {
@@ -265,6 +288,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 4;
             outputViewText.setText("");
         }else if (v.getId() == btn5.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("5");
             }else {
@@ -273,6 +301,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 5;
             outputViewText.setText("");
         }else if (v.getId() == btn6.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("6");
             }else {
@@ -281,6 +314,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 6;
             outputViewText.setText("");
         }else if (v.getId() == btn7.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("7");
             }else {
@@ -289,6 +327,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 7;
             outputViewText.setText("");
         }else if (v.getId() == btn8.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("8");
             }else {
@@ -297,6 +340,11 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             input = input * 10 + 8;
             outputViewText.setText("");
         }else if (v.getId() == btn9.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
             if(inputViewText.getText().equals("0")) {
                 inputViewText.setText("9");
             }else {
@@ -304,40 +352,10 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             }
             input = input * 10 + 9;
             outputViewText.setText("");
-        }else if (v.getId() == btn_parleft.getId()) {
-            if(inputViewText.getText().equals("0")) {
-                inputViewText.setText("(");
-            }else {
-                inputViewText.setText(inputViewText.getText() + "(");
+        }else if (v.getId() == btn_plus.getId()) {
+            if(check == true) {
+                inputViewText.setText(outputViewText.getText() + "");
             }
-            input = input * 10 + '(';
-            outputViewText.setText("");
-        }else if (v.getId() == btn_parright.getId()) {
-            if(inputViewText.getText().equals("0")) {
-                inputViewText.setText(")");
-            }else {
-                inputViewText.setText(inputViewText.getText() + ")");
-            }
-            input = input * 10 + ')';
-            outputViewText.setText("");
-
-            // .을 한번 찍으면 뒤에 나오면 안돼
-
-        }else if (v.getId() == btn_point.getId()) {
-            String imsi = inputViewText.getText() + "";
-            if(imsi.equals("") || imsi.equals("0")) {
-                return;
-            }
-            String imsi2 = imsi.charAt(imsi.length() - 1) + "";
-            if(imsi2.equals(".")) {
-                inputViewText.setText(imsi.substring(0, imsi.length() - 1) +".");
-            } else {
-                inputViewText.setText(inputViewText.getText() + ".");
-            }
-            calc();
-            outputViewText.setText("");
-        }
-        else if (v.getId() == btn_plus.getId()) {
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
@@ -351,8 +369,12 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             calc();
             input = 0;
             calcCheck = 1;
+            check = false;
             outputViewText.setText("");
         }else if (v.getId() == btn_minus.getId()) {
+            if(check == true) {
+                inputViewText.setText(outputViewText.getText() + "");
+            }
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
@@ -366,8 +388,12 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             calc();
             input = 0;
             calcCheck = 2;
+            check = false;
             outputViewText.setText("");
         }else if (v.getId() == btn_multiple.getId()) {
+            if(check == true) {
+                inputViewText.setText(outputViewText.getText() + "");
+            }
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
@@ -381,8 +407,12 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             calc();
             input = 0;
             calcCheck = 3;
+            check = false;
             outputViewText.setText("");
         }else if (v.getId() == btn_devide.getId()) {
+            if(check == true) {
+                inputViewText.setText(outputViewText.getText() + "");
+            }
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
@@ -396,8 +426,12 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             calc();
             input = 0;
             calcCheck = 4;
+            check = false;
             outputViewText.setText("");
         }else if (v.getId() == btn_equal.getId()) {
+            if(result == 0.0) {
+                return;
+            }
             String imsi = inputViewText.getText() + "";
             if(imsi.equals("") || imsi.equals("0")) {
                 return;
@@ -407,11 +441,19 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
                 return;
             } else {
                 calc();
-                outputViewText.setText(result + "");
-                inputViewText.setText(result + "");
+                if(result % 1 == 0) {
+                    outputViewText.setText((int)result + "");
+                }else {
+                    result = Math.round(result * 10000);
+                    result /= 10000;
+                    outputViewText.setText(result + "");
+                }
+                inputViewText.setText("");
+
                 input = result;
                 result = 0;
                 calcCheck = 1;
+                check = true;
             }
         }else if (v.getId() == btn_clear.getId()) {
             inputViewText.setText("");
@@ -419,6 +461,7 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             result = 0;
             input = 0;
             calcCheck = 1;
+            check = false;
         }
 
     }

@@ -2,23 +2,19 @@ package test01;
 
 public class test01 {
 	public static void main (String[] args) {
-		int[][] score = {	//score.length = 3 (1차원 배열의 갯수)
-				{100,90,80,70},
-				{ 90,80,70,60},
-				{ 2380,70,60,420}
+		int[][] score = {
+				{100, 30, 40, 20, 0, 30},
+				{30, 40, 60, 100, 30, 60},
+				{10, 30, 40, 20, 20, 30}
 		};
 		
-		System.out.println("\t\t[성적표]");
-		System.out.println("============================================");
-		System.out.println("국어\t영어\t수학\t철학\t총점\t평균");
-
+		System.out.println("\t\t\t[성적표]");
+		System.out.println("=====================================");
+		System.out.println("국어\t영어\t수학\t과학\t사회\t도덕\t총점\t평균");
+		
 		for (int row = 0; row < score.length; row++) {
 			int total = 0;
-			for (int col = 0; col < score[row].length; col++) {
-				System.out.print(score[row][col] + "\t"); // \t 는 tap의 약자로 '간격'을 의미
-				total += score[row][col];
-			}
-			System.out.println(total + "\t" + (total / score[row].length));
+			
 		}
 	}
 }
