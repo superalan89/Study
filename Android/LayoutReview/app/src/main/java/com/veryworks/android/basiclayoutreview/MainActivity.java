@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity
             dummy.setText(original.getText().toString());
             dummy.setWidth(original.getWidth());
             dummy.setHeight(original.getHeight());
-            dummy.setBackgroundColor(Color.RED);
+            dummy.setBackgroundColor(Color.BLUE);
 
             // 부모 레이아웃을 가져와서 원래 클래스로 캐스팅
             LinearLayout parent = (LinearLayout) original.getParent();
@@ -62,11 +62,11 @@ public class MainActivity extends AppCompatActivity
                     dummy, "x", btnGoal.getX()
             );
             ObjectAnimator aniR = ObjectAnimator.ofFloat(
-                    dummy, "rotation", 720
+                    dummy, "rotation", 360
             );
             AnimatorSet aniSet = new AnimatorSet();
             aniSet.playTogether(aniY, aniX, aniR);
-            aniSet.setDuration(5000);
+            aniSet.setDuration(1000);
             // 애니메이션 종료를 체크하기 위한 리스너를 달아준다.
             aniSet.addListener(new Animator.AnimatorListener() {
                 @Override

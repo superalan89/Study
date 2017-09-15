@@ -15,6 +15,10 @@ public class test01 {
 		for (int row = 0; row < score.length; row++) {
 			int total = 0;
 			
+			for (int row = 0; row < score.length; row++) {
+				
+			}
+			
 		}
 	}
 }

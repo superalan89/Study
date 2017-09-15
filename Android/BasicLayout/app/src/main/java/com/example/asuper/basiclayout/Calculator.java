@@ -352,6 +352,42 @@ public class Calculator extends AppCompatActivity implements View.OnClickListene
             }
             input = input * 10 + 9;
             outputViewText.setText("");
+        }else if (v.getId() == btn_parleft.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
+            if(inputViewText.getText().equals("0")) {
+                inputViewText.setText("(");
+            }else {
+                inputViewText.setText(inputViewText.getText() + "(");
+            }
+            outputViewText.setText("");
+        }else if (v.getId() == btn_parright.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
+            if(inputViewText.getText().equals("0")) {
+                inputViewText.setText(")");
+            }else {
+                inputViewText.setText(inputViewText.getText() + ")");
+            }
+            outputViewText.setText("");
+        }else if (v.getId() == btn_point.getId()) {
+            if(check == true) {
+                inputViewText.setText("");
+                input = 0.0;
+                check = false;
+            }
+            if(inputViewText.getText().equals("0")) {
+                inputViewText.setText(".");
+            }else {
+                inputViewText.setText(inputViewText.getText() + ".");
+            }
+            outputViewText.setText("");
         }else if (v.getId() == btn_plus.getId()) {
             if(check == true) {
                 inputViewText.setText(outputViewText.getText() + "");
