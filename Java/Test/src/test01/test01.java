@@ -9,20 +9,19 @@ public class test01 {
 		};
 		
 		System.out.println("\t\t\t[성적표]");
-		System.out.println("=====================================");
+		System.out.println("=====================================")
+		
 		System.out.println("국어\t영어\t수학\t과학\t사회\t도덕\t총점\t평균");
 		
 		for (int row = 0; row < score.length; row++) {
 			int total = 0;
 			
-			for (int row = 0; row < score.length; row++) {
-				
+			for (int col = 0; row < score.length; col++) {
+				System.out.println(score[]);
 			}
-			
 		}
 	}
 }
-	
 
 
 /*
