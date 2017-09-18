@@ -11,8 +11,8 @@
 
 #### 코딩 링크
 
-1. 메인 클라스 :  [MainActivity.java](https://github.com/superalan89/Study/tree/master/Android/CustomView/MainActivity.java)
+1. 메인 클라스 :  [MainActivity.java](https://github.com/superalan89/Study/blob/master/Android/CustomView/app/src/main/java/com/asuper/customview/MainActivity.java)
 
-2. 변수 선언 :  [DrawActivity.java](https://github.com/superalan89/Study/tree/master/Android/CustomView/DrawActivity.java)
+2. 변수 선언 :  [DrawActivity.java](https://github.com/superalan89/Study/blob/master/Android/CustomView/app/src/main/java/com/asuper/customview/DrawActivity.java)
 
-3. 그림판 클래스 :   [DrawView.java](https://github.com/superalan89/Study/tree/master/Android/CustomView/DrawView.java)
+3. 그림판 클래스 :   [DrawView.java](https://github.com/superalan89/Study/blob/master/Android/CustomView/app/src/main/java/com/asuper/customview/DrawView.java)
