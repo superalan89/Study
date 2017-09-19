@@ -95,6 +95,7 @@ public class DrawView extends View {
             // 터치가 일어나면 패스를 해당 좌표까지 선을 긋는다.
             case MotionEvent.ACTION_MOVE:
                 currentPath.get(currentPath.size() - 1).lineTo(event.getX(), event.getY());
+                break;
             // Nothing to do
             case MotionEvent.ACTION_UP:
                 break;
