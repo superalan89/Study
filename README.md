@@ -37,3 +37,5 @@
 4. [위젯 실습](https://github.com/superalan89/Study/tree/master/Android/BasicWidget)
 
 5. [커스텀뷰 실습](https://github.com/superalan89/Study/tree/master/Android/CustomView)
+
+6. [메모장 실습 및 Activity 생명주기](https://github.com/superalan89/Study/tree/master/Android/AndroidMemo)
