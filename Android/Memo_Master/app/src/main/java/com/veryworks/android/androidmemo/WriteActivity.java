@@ -5,6 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.veryworks.android.androidmemo.domain.Memo;
+import com.veryworks.android.androidmemo.util.FileUtil;
+
+import java.io.IOException;
 
 public class WriteActivity extends AppCompatActivity {
 
@@ -21,10 +27,34 @@ public class WriteActivity extends AppCompatActivity {
         initListener();
     }
 
-    private void write(){
-        // 내용을 등록하고, 목록으로 이동
+    /**
+     * 내용을 파일에 작성
+     * - 파일쓰기
+     *   내부저장소 - Internal : 개별앱만 접근가능, 파일탐색기에서 보이지 않는다.
+     *   외부저장소 - External : 모든앱이 접근가능 > 권한 필요
+     */
+    private Memo getMemoFromScreen(){
+        Memo memo = new Memo();
+        memo.setNo(1);
+        memo.setTitle(editTitle.getText().toString());
+        memo.setAuthor(editAuthor.getText().toString());
+        memo.setContent(editContent.getText().toString());
+        memo.setDatetime(System.currentTimeMillis());
+        return memo;
+    }
 
-        // 현재 액티비티를 종료한다.
+    private void write(Memo memo){
+        try {
+            String filename = System.currentTimeMillis() + ".txt";
+            FileUtil.write(this, filename, memo.toString());
+
+            setResult(RESULT_OK); // 나를 호출한 액티비티로 성공/실패 값을 넘겨준다.
+
+            Toast.makeText(this, "등록되었습니다!", Toast.LENGTH_SHORT).show();
+        } catch (IOException e) {
+            Toast.makeText(this, "에러:"+e.toString(), Toast.LENGTH_SHORT).show();
+        }
+
         finish();
     }
 
@@ -32,7 +62,8 @@ public class WriteActivity extends AppCompatActivity {
         btnPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                write();
+                Memo memo = getMemoFromScreen();
+                write(memo);
             }
         });
     }
