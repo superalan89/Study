@@ -5,6 +5,6 @@
 
 ## Activity 생명주기
 
-<img src="Android/AndroidMemo/img/Activity_01.jpg" alt="Activity_LifeCycle01" title="MVC" style="max-width:100%;">
+<img src="/img/Activity_01.jpg" alt="Activity_LifeCycle01" title="Activity_LifeCycle01" style="max-width:100%;">
 
-<img src="Android/AndroidMemo/img/Activity_02.jpg" alt="MVC" title="Activity_LifeCycle02" style="max-width:100%;">
+<img src="/img/Activity_02.jpg" alt="Activity_LifeCycle02" title="Activity_LifeCycle02" style="max-width:100%;">
