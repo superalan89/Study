@@ -34,7 +34,5 @@ public class CustomView extends View {
 
                 // 화면에 사각형 그리기
                 canvas.drawRect(100, 100, 200, 200, paint);
-
-
         }
 }
