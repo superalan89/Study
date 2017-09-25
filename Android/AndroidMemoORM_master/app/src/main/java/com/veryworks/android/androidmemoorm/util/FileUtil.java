@@ -27,7 +27,6 @@ public class FileUtil {
         } catch (IOException e) {
             throw e;
         } finally {
-
             if(fis != null) {
                 try {
                     fis.close();
@@ -67,9 +66,17 @@ public class FileUtil {
     }
 
     private static byte[] bitmapToByteArray( Bitmap bitmap ) {
-        ByteArrayOutputStream stream = new ByteArrayOutputStream() ;
-        bitmap.compress( Bitmap.CompressFormat.JPEG, 100, stream) ;
-        byte[] byteArray = stream.toByteArray();
+        byte[] byteArray = null;
+        try {
+            if(bitmap != null) {
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
+                byteArray = stream.toByteArray();
+                stream.close();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return byteArray;
     }
 }

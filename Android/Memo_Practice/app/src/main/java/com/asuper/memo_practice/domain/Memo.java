@@ -5,4 +5,5 @@ package com.asuper.memo_practice.domain;
  */
 
 public class Memo {
+
 }

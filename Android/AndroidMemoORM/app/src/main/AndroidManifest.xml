@@ -17,7 +17,9 @@
             </intent-filter>
         </activity>
         <!-- 액티비티 수동 추가시 설정 -->
-        <activity android:name=".DrawActivity"></activity>
+        <activity android:name=".DrawActivity" />
+        <activity android:name=".detail" />
+        <activity android:name=".DetailActivity"></activity>
     </application>
 
 </manifest>

@@ -1,16 +1,14 @@
 package com.asuper.androidmemoorm;
-
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import com.asuper.androidmemoorm.model.PicNote;
-import java.util.List;
 
-import java.util.ArrayList;
+import java.util.List;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>{
@@ -43,17 +41,31 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>{
         PicNote picNote = data.get(position);
         // 2. 홀더에 있는 위젯에 값을 입력한다.
         holder.setTitle(picNote.getTitle());
+        holder.setFilename(picNote.getBitmap());
     }
 
     // 0. 홀더 만들기
     public class Holder extends RecyclerView.ViewHolder{
+        private String filename;
         private TextView textTitle;
         public Holder(View itemView) {
             super(itemView);
             textTitle = itemView.findViewById(R.id.textTitle);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), DetailActivity.class);
+                    intent.putExtra("title", textTitle.getText());
+                    intent.putExtra("filename", filename);
+                    view.getContext().startActivity(intent);
+                }
+            });
         }
         public void setTitle(String title){
             textTitle.setText(title);
+        }
+        public void setFilename(String filename){
+            this.filename = filename;
         }
     }
 }

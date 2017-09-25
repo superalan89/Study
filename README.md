@@ -39,3 +39,5 @@
 5. [커스텀뷰 실습](https://github.com/superalan89/Study/tree/master/Android/CustomView)
 
 6. [메모장 실습 및 Activity 생명주기](https://github.com/superalan89/Study/tree/master/Android/AndroidMemo)
+
+7. [Permission](https://github.com/superalan89/Study/tree/master/Android/Permission)

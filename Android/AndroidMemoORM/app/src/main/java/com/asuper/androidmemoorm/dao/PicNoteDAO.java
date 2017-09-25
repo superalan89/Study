@@ -11,9 +11,6 @@ import com.j256.ormlite.dao.GenericRawResults;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * Created by pc on 9/22/2017.
- */
 
 public class PicNoteDAO {
 
