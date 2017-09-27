@@ -12,6 +12,7 @@ import java.util.List;
 
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.Holder>{
+
     // 1. 데이터 저장소
     private List<PicNote> data;
 
