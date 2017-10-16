@@ -1,4 +1,4 @@
-package com.asuper.musicplayer;
+package com.asuper.musicpractice;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,20 +10,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.asuper.musicplayer.model.Music;
+import com.asuper.musicpractice.model.Music;
 
 import java.util.List;
+
+/**
+ * Created by super on 2017-10-13.
+ */
 
 public class MusicFragment extends Fragment {
 
     private static final String ARG_COLUMN_COUNT = "column-count";
     private int mColumnCount = 1;
 
-    // 메인액티비티와 통신하는 인터페이스
     private OnListFragmentInteractionListener mListener;
 
-    public MusicFragment() {
-    }
+    public MusicFragment() {}
 
     public static MusicFragment newInstance(int columnCount) {
         MusicFragment fragment = new MusicFragment();
@@ -45,7 +47,7 @@ public class MusicFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_music_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
 
         if (view instanceof RecyclerView) {
             Context context = view.getContext();
@@ -72,14 +74,14 @@ public class MusicFragment extends Fragment {
         }
     }
 
-    public interface OnListFragmentInteractionListener {
-        List<Music.Item> getList();
-        void openPlayer(int position);
-    }
-
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    public interface OnListFragmentInteractionListener {
+        List<Music.Item> getList();
+        void openPlayer(int position);
     }
 }

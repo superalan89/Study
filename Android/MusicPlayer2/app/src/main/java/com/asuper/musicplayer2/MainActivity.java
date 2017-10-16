@@ -1,9 +1,16 @@
 package com.asuper.musicplayer2;
 
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.ServiceConnection;
+import android.os.Bundle;
+import android.os.IBinder;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
+import android.view.View;
+import android.widget.Toast;
 
 import com.asuper.musicplayer2.domain.Music;
 import com.asuper.musicplayer2.player.Player;
@@ -89,4 +96,48 @@ public class MainActivity extends BaseActivity
         intent.putExtra(Const.KEY_POSITION, position);
         startActivity(intent);
     }
+
+    /*Intent intent;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        intent = new Intent(this, MyService.class);
+    }
+
+    // 재생 시작
+    public void start (View view) {
+        intent.setAction("PLAY");
+        startService(intent);
+    }
+
+    // 서비스 종료
+    public void stop(View view) {
+        stopService(intent);
+        isService = false;
+    }
+
+    boolean isService = false;
+    MyService service;
+    // 서비스와의 연결 통로
+    ServiceConnection con = new ServiceConnection() {
+        // 서비스와 연결되는 순간 호출되는 함수
+        @Override
+        public void onServiceConnected(ComponentName componentName, IBinder iBinder) {
+            isService = true;
+            service = ((MyService.CustomBinder)iBinder).getService();
+        }
+        @Override
+        public void onServiceDisconnected(ComponentName componentName) {
+            isService = false;
+        }
+    };
+
+    public void startForeground(View view){
+
+    }
+
+    public void stopForeground(View view){
+
+    }*/
 }

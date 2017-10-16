@@ -1,4 +1,4 @@
-package com.asuper.servicebasic;
+package com.asuper.musicplayer2;
 
 import android.app.Notification;
 import android.app.NotificationManager;
