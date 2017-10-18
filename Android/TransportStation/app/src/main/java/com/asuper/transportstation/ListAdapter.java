@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.asuper.transportstation.model.JsonClass;
+import com.asuper.transportstation.model.Row;
 
 import java.util.List;
 
@@ -17,11 +18,9 @@ import java.util.List;
  */
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder>{
-    Context context;
-    List<JsonClass> data;
-    public ListAdapter(List<JsonClass> data, Context context){
+    List<Row> data;
+    public ListAdapter(List<Row> data){
         this.data = data;
-        this.context = context;
     }
 
     @Override
@@ -33,9 +32,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.Holder>{
 
     @Override
     public void onBindViewHolder(Holder holder, int position) {
-        JsonClass jsonClass = data.get(position);
+        Row row = data.get(position);
         //holder.imageView.setImageURI();
-        holder.textID.setText(jsonClass.getStationDayTrnsitNmpr()+"");
+        holder.textID.setText(row.getSN());
+        holder.stationNM.setText(row.getSTATN_NM());
 
     }
 

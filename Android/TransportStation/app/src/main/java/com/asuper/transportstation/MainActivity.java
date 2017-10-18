@@ -29,12 +29,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void load(){
-        new AsyncTask<Void, Void, String>(){
+        new AsyncTask<String, Void, String>(){
 
             @Override
-            protected String doInBackground(Void... params) {
-                String param1 = args[0];
-                String result = Remote.getData("http://openapi.seoul.go.kr:8088/67676d737073757037385245515762/json/StationDayTrnsitNmpr/1/100/");
+            protected String doInBackground(String... params) {
+                String result = Remote.getData(params[0]);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 return result;
             }
 
@@ -44,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
                 JsonClass json = gson.fromJson(result, JsonClass.class);
                 Row rows[] = json.getStationDayTrnsitNmpr().getRow();
                 List<Row> data = Arrays.asList(rows);
-            }
-        };
+                setList(data);
 
-        task.execute(url);
+            }
+        }.execute("http://openapi.seoul.go.kr:8088/67676d737073757037385245515762/json/StationDayTrnsitNmpr/1/44/");
     }
     /*
     private List<Row> parse(String string){
@@ -56,10 +60,8 @@ public class MainActivity extends AppCompatActivity {
         List<Row> result = Arrays.asList(user);
         return result;
     }*/
-
-    List<JsonClass> data;
-    private void setList(){
-        ListAdapter adapter = new ListAdapter(data, this);
+    private void setList(List<Row> data){
+        ListAdapter adapter = new ListAdapter(data);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
