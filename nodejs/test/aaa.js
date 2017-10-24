@@ -32,8 +32,14 @@ var d = 5;
 
 sum(c,d);
 
+// 함수만들기 1
 function sum (param1, param2) {
-	console.log(param1 + param2)
+    return param1 + param2;
+}
+
+// 함수만들기 2
+var sum = function (param1, param2) {
+	return param1 + param2;
 }
 
 // 7. class 사용하기
@@ -44,3 +50,6 @@ function Num(param1,param2) {
 
 // 클래스의 사용
 var num = new Num ("Hello", 157);
+
+num.b = 500;
+num.c("a",49949);

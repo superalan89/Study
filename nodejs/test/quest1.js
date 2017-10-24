@@ -15,6 +15,8 @@ var p = function(count) {
 	}
 }
 
+console.log(a);
+console.log(b);
 p(count);
 
 
