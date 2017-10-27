@@ -1,0 +1,1 @@
+mongo --dbpath c:\workspaces\Study\MongoDB\datas

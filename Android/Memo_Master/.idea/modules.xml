@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AndroidMemo.iml" filepath="$PROJECT_DIR$/AndroidMemo.iml" />
+      <module fileurl="file://C:\workspaces\Study\Android\Memo_Master\AndroidMemo.iml" filepath="C:\workspaces\Study\Android\Memo_Master\AndroidMemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Memo_Master.iml" filepath="$PROJECT_DIR$/Memo_Master.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
