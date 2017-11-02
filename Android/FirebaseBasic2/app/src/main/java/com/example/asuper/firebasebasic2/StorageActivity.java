@@ -86,8 +86,12 @@ public class StorageActivity extends AppCompatActivity implements UserAdapter.Ca
         IRetro service = retrofit.create(IRetro.class);
         RequestBody body = RequestBody.create(MediaType.parse("plain/text"), json);
         // 서비스로 서버 연결준비
+        // http://192.168.1.100:8090/sendNotification
         Call<ResponseBody> remote = service.sendNotification(body);
         // 실제 연결후 데이터 처리
+
+
+
         remote.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {

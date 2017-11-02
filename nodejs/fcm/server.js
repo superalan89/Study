@@ -8,12 +8,19 @@ var msg = {
 	to : "",
 	notification : {
 		title : "메시지 테스트",
-		body : ""
+		body : "",
+		sound : "Alarm01.wav",
+		click_action : "NOTI_LAUNCHER"
+	},
+	data : {
+		type : "one"
 	}
+
 }
 
+
 var server = http.createServer(function(request,response){
-	// post 메시지 수신
+	// 넘겨준 json 데이터를을 꺼낸다
 	if(request.url == "/sendNotification"){
 		var postdata = "";
 		request.on("data", function(data){

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "12195685441",
+    "firebase_url": "https://fir-chatting-f101d.firebaseio.com",
+    "project_id": "fir-chatting-f101d",
+    "storage_bucket": "fir-chatting-f101d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12195685441:android:4b335a7ed40c6628",
+        "android_client_info": {
+          "package_name": "com.example.asuper.firebasechatting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12195685441-jtf4pg8kcc5b3gt174g0g615eoj9sa4u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.asuper.firebasechatting",
+            "certificate_hash": "57e831e12881fe9f253c529e834f10eca9e57063"
+          }
+        },
+        {
+          "client_id": "12195685441-odmeuutdofmh81f9rtaceskbl0eiu5rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWwln5j8LQS0ScJoc2ExNgm4sWcVwbP6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12195685441-odmeuutdofmh81f9rtaceskbl0eiu5rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
