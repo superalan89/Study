@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FFFFFFFF</color>
+    <color name="colorLine">#aeaca8a8</color>
+    <color name="colorLightGray">#918e8e</color>
+    <color name="fontColor_black">#AE000000</color>
+
+    <color name="DeepGreen">#247c83</color>
+    <color name="gray_background">#f2f2f2</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#888a89</color>
+
+
+    <color name="editTextUnderLine">#FFB7B7B7</color>
+    <color name="marker_clicked">#00A599</color>
+    <color name="trasparent">#00000000</color>
+
+    <color name="selected_day_background">#247c83</color>
+    <color name="selected_day_text">#ffffff</color>
+    <color name="normal_day">#AE000000</color>
+    <color name="map_circle">#6cef6a6a</color>
+
+    <color name="calendar_booked_textColor">#414040</color>
+
+    <color name="reservation_talk_background">#dfdcdc</color>
+    <color name="btn_cancel_background_color">#f6afb3</color>
+    <color name="colorgray_transFF918E8E">#7a918e8e</color>
+
+
+</resources>

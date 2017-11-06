@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name">Airbnb</string>
+    <string name="facebook_app_id">1622345861171632</string>
+    <string name="title_activity_google_map_view_pager">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hostInfo_intro_dummy">Hi, there! I\'m Ji-eun from south korea.\n
+        I\'m Ji-eun from south korea.\nI\'m Ji-eun from south korea.\nI\'m Ji-eun from south korea.
+    </string>
+    <string name="detail_house_review_dummy">
+        Great Place to escape for a few days. The outside shower au naturel is magnificent. The TV and the interior stereo do not work as do a few of the bulbs. The air conditioning could do with a re gas as it is not functioning h way it should and I could not get the oven to light. But these The BBQ - g s is excellent and the solar powered outside lights and the sun loungers and plunge pool are excellentin heat. Most of all you will loathe traquility and peace and quiet. Go Horse Riding at Rejertilla nearby or mountain biking. Go to Caminito del Rey - but book in advane all are unmissable. The airstream is super cool and unusual just needs bit more love from the host to be perfect. The experience is unmissable and 5 star you will not be disappointed. The area is incredibly beautiful. Drive the road from El Burgo to Ronda - which is so beautiful. An amazing road and No speed cameras - Z bends - driving as it should be - or better rent a fast motorbike!
+            </string>
+
+    <string name="saveList">목록 만들기</string>
+    <string name="wishlist_menu_delete">삭제하기</string>
+
+    <!-- calendar tag -->
+    <string name="date_tag">date tag</string>
+    <string name="check_booking_tag">check booked tag</string>
+
+
+    <!-- calendarView -->
+    <string name="mon_kr">월</string>
+    <string name="thu_kr">화</string>
+    <string name="wen_kr">수</string>
+    <string name="thur_kr">목</string>
+    <string name="fri_kr">금</string>
+    <string name="sat_kr">토</string>
+    <string name="sun_kr">일</string>
+    <string name="btn_save">저장</string>
+
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="title_activity_detail_maps">Map</string>
+    <string name="title_activity_detail_map">Map</string>
+    <string name="calendar_info">체크인 날짜와 체크아웃 날짜를 선택해주세요.</string>
+    <string name="address_pin_checker">핀이 놓인 위치가 정확한가요?</string>
+
+
+    <!-- 숙소 유형 선택 Spinner 항목 -->
+    <string-array name="typeOfBuilding">
+        <item>아파트</item>
+        <item>주택</item>
+        <item>베드 앤 브랙퍼스트</item>
+        <item>로프트</item>
+        <item>오두막</item>
+        <item>별장</item>
+        <item>성</item>
+        <item>기숙사</item>
+        <item>트리하우스</item>
+        <item>보트</item>
+        <item>비행기</item>
+        <item>캠핑카</item>
+        <item>이글루</item>
+        <item>등대</item>
+        <item>유르트 (몽골의 전통 텐트)</item>
+        <item>티피 (원뿔형 천막)</item>
+        <item>동굴</item>
+        <item>섬</item>
+        <item>스위스식 오두막</item>
+        <item>기차</item>
+        <item>텐트</item>
+        <item>기타</item>
+    </string-array>
+
+    <!-- 숙박 가능 인원 -->
+    <string-array name="availablePerson">
+        <item>게스트 1명</item>
+        <item>게스트 2명</item>
+        <item>게스트 3명</item>
+        <item>게스트 4명</item>
+        <item>게스트 5명</item>
+        <item>게스트 6명</item>
+        <item>게스트 7명</item>
+        <item>게스트 8명</item>
+        <item>게스트 9명</item>
+        <item>게스트 10명</item>
+        <item>게스트 11명</item>
+        <item>게스트 12명</item>
+        <item>게스트 13명</item>
+        <item>게스트 14명</item>
+        <item>게스트 15명</item>
+        <item>게스트 16+명</item>
+    </string-array>
+
+    <!-- 숙박 가능 인원 (게스트용 침실) -->
+    <string-array name="bedroom">
+        <!--<item>원룸</item>-->
+        <item>침실 1개</item>
+        <item>침실 2개</item>
+        <item>침실 3개</item>
+        <item>침실 4개</item>
+        <item>침실 5개</item>
+        <item>침실 6개</item>
+        <item>침실 7개</item>
+        <item>침실 8개</item>
+        <item>침실 9개</item>
+        <item>침실 10개</item>
+    </string-array>
+
+    <!-- 숙박 가능 인원 (게스트용 침대) -->
+    <string-array name="bed">
+        <item>침대 1개</item>
+        <item>침대 2개</item>
+        <item>침대 3개</item>
+        <item>침대 4개</item>
+        <item>침대 5개</item>
+        <item>침대 6개</item>
+        <item>침대 7개</item>
+        <item>침대 8개</item>
+        <item>침대 9개</item>
+        <item>침대 10개</item>
+        <item>침대 11개</item>
+        <item>침대 12개</item>
+        <item>침대 13개</item>
+        <item>침대 14개</item>
+        <item>침대 15개</item>
+        <item>침대 16개 이상</item>
+    </string-array>
+
+    <!-- 욕실 개수 -->
+    <string-array name="bath">
+        <item>욕실 0개</item>
+        <!--<item>욕실 0.5개</item>-->
+        <item>욕실 1개</item>
+        <!--<item>욕실 1.5개</item>-->
+        <item>욕실 2개</item>
+        <!--<item>욕실 2.5개</item>-->
+        <item>욕실 3개</item>
+        <!--<item>욕실 3.5개</item>-->
+        <item>욕실 4개</item>
+        <!--<item>욕실 4.5개</item>-->
+        <item>욕실 5개</item>
+        <!--<item>욕실 5.5개</item>-->
+        <item>욕실 6개</item>
+        <!--<item>욕실 6.5개</item>-->
+        <item>욕실 7개</item>
+        <item>욕실 8개 이상</item>
+    </string-array>
+
+    <!-- reservation string-->
+    <string name="reservation_step2_title">호스트에게 회원님의\n여행에 대해 알려주세요.</string>
+    <string name="reservation_step2_detail">여행 계획 세부사항을 공유하면 호스트가 회원님의 숙박을 준비하는데 도움이 됩니다.</string>
+    <string name="reservation_step2_host_talk">안녕하세요. 만나게 되어 반갑습니다. 도움이 필요하시면 무엇이든 말씀해주세요. 곧 만나요!</string>
+    <string name="reservation_step2_hint_talk">호스트에게 회원님을 간단히 소개하고 여행 목적을 알려주세요.</string>
+</resources>
