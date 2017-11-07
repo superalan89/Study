@@ -1,6 +1,8 @@
 package com.example.asuper.firebasechatting_master.model;
 
-import com.google.firebase.database..Exclude;
+import android.widget.TextView;
+
+import com.google.firebase.database.Exclude;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 import java.util.List;
@@ -26,3 +28,4 @@ public class Room {
         return friendString;
     }
 }
+

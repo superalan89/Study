@@ -1,11 +1,18 @@
 package com.example.asuper.firebasechatting_master;
 
+
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.RelativeLayout;
+
+
+/**
+ * Created by pc on 11/3/2017.
+ */
 
 public class FriendListActivity extends AppCompatActivity {
 

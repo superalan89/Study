@@ -1,5 +1,8 @@
 package com.example.asuper.firebasechatting_master;
 
+
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -16,9 +19,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import com.example.asuper.firebasechatting_master.model.Room;
-import com.example.asuper.firebasechatting_master.model.User;
-import com.example.asuper.firebasechatting_master.util.PreferenceUtil;
+import net.flow9.firebasechatting.model.Room;
+import net.flow9.firebasechatting.model.User;
+import net.flow9.firebasechatting.util.PreferenceUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
