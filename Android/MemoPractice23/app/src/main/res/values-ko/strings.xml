@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">메모장</string>
+    <string name="listTitle">목록</string>
+    <string name="btnPost">글쓰기</string>
+</resources>

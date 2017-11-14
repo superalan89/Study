@@ -89,7 +89,7 @@ class Holder {
                 Intent intent = new Intent(view.getContext(), DetailActivity.class);
                 intent.putExtra("position", position);
 //                intent.putExtra("title",textTitle.getText());
-//                intent.putExtra("author", author);
+//                intent.putExtra("author", author);`
 //                intent.putExtra("content", content);
 //                intent.putExtra("datetime", textDate.getText());
                 view.getContext().startActivity(intent);
