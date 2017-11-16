@@ -18,6 +18,7 @@ import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.internal.operators.observable.ObservableZip;
 import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     CustomAdapter adapter;
     List<String> months = new ArrayList<>();
 
+    Observable<String> observable;
+    Observable<String> observableZip;
     String monthString[];
 
     @Override
@@ -41,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         monthString = dfs.getMonths();
 
         // 1. 발행자
-        Observable<String> observable = Observable.create(
+        observable = Observable.create(
                 e -> {
                     try {
                         for (String month : monthString) {
@@ -55,8 +58,74 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-        // 2. 구독자
+        Observable<String> obs1 = Observable.create(e -> {
+            try {
+                Thread.sleep(1000);
+                e.onNext("Singer");
+                Thread.sleep(1000);
+                e.onNext("Athlete");
+                Thread.sleep(5000);
+                e.onNext("Rapper");
+                e.onComplete();
+            }catch(Exception ex){
+                throw ex;
+            }
+        });
+
+        observableZip = Observable.zip(
+                Observable.just("BeWhy","Curry","Zico"),
+                obs1,
+                (item1, item2) -> "job=".concat(item2).concat(", name=").concat(item1)
+        );
+    }
+    /*
+        map 은 데이터 자체를 변형 할 수 있다
+     */
+    public void doMap(View view){
+        months.clear();
         observable
+                .subscribeOn(Schedulers.io())              // 옵저버블의 thread를 지정
+                .observeOn(AndroidSchedulers.mainThread()) // 옵저버의 thread를 지정
+                .filter(str -> str.equals("3월")?false:true)
+                .map(str -> {
+                    if(str.equals("4월")) {
+                        return "[" + str + "]";
+                    }else{
+                        return str;
+                    }
+                })
+                .subscribe(
+                        str -> {
+                            months.add(str);
+                            adapter.setDataAndRefresh(months);
+                        }
+                );
+    }
+    /*
+        flatMap은 아이템을 여러개로 분리할 수 있다.
+     */
+    public void doFlatmap(View view){
+        months.clear();
+        observable
+                .subscribeOn(Schedulers.io())              // 옵저버블의 thread를 지정
+                .observeOn(AndroidSchedulers.mainThread()) // 옵저버의 thread를 지정
+                .filter(str -> str.equals("3월")?false:true)
+                .flatMap(item -> {
+                    return Observable.fromArray(new String[]{"name:"+item, "["+item+"]"});
+                })
+                .subscribe(
+                        str -> {
+                            months.add(str);
+                            adapter.setDataAndRefresh(months);
+                        }
+                );
+    }
+    /*
+        복수개의 옵저버블을 하나로 묶어준다
+     */
+    public void doZip(View view){
+        months.clear();
+        observableZip
                 .subscribeOn(Schedulers.io())              // 옵저버블의 thread를 지정
                 .observeOn(AndroidSchedulers.mainThread()) // 옵저버의 thread를 지정
                 .subscribe(

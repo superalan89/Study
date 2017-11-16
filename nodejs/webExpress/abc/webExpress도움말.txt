@@ -1,0 +1,13 @@
+1. express 설치
+
+2. express-generator -g 설치
+
+3. 모듈생성
+   express --view=ejs 만들 디텍토리
+
+4. cd 만든디텍토리
+   기본 모듈(의존성이 있는) 설치
+   npm install
+
+5. 시작
+   npm start
