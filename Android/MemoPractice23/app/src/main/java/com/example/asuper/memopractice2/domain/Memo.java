@@ -23,9 +23,7 @@ public class Memo {
     }
 
     public void parse(String text){
-        // 1. 문자열을 줄("\n")단위로 분해
         String lines[] = text.split("\n");
-        // 2. 문자열을 행("위에 DELIMETER")단위로 분해
         for(String line : lines){
             String columns[] = line.split(DELIMETER);
             String key = "";
