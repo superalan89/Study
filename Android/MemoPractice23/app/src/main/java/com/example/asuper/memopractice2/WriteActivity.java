@@ -26,8 +26,8 @@ public class WriteActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_write);
-        initView();
-        initListener();
+        revView();
+        revListener();
     }
 
 
@@ -55,7 +55,7 @@ public class WriteActivity extends AppCompatActivity {
         finish();
     }
 
-    private void initListener() {
+    private void revListener() {
         btnPost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +65,7 @@ public class WriteActivity extends AppCompatActivity {
         });
     }
 
-    private void initView() {
+    private void revView() {
         btnPost = findViewById(R.id.btnPost);
         editTitle = findViewById(R.id.editTitle);
         editAuthor = findViewById(R.id.editAuthor);

@@ -19,11 +19,11 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        initView();
-        init();
+        revView();
+        rev();
     }
 
-    private void init() {
+    private void rev() {
         Intent intent = getIntent();
         int position = intent.getIntExtra("position", -1 );
 
@@ -36,7 +36,7 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
-    private void initView() {
+    private void revView() {
         txtTitle = findViewById(R.id.txtTitle);
         txtDate = findViewById(R.id.txtDate);
         txtAuthor = findViewById(R.id.txtAuthor);

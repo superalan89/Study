@@ -32,7 +32,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     private void rev() {
-        Log.d("ListActivity", "called init()");
+        Log.d("ListActivity", "called rev()");
         ArrayList<Memo> list = loadList();
         ListAdapter adapter = new ListAdapter(this, list);
         listView.setAdapter(adapter);
@@ -52,7 +52,7 @@ public class ListActivity extends AppCompatActivity {
         return result;
     }
 
-    private  static final int WRITE_ACTIVITY = 123;
+    private  static final int WRITE_ACTIVITY = 12345;
 
     private void revListener() {
         btnWrite.setOnClickListener(new View.OnClickListener() {

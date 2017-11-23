@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_one"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_partial_secure"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_two"
+        app:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Gruops" />
+    <item
+        android:id="@+id/action_three"
+        android:enabled="true"
+        android:icon="@android:drawable/presence_offline"
+        android:title="Discover"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_four"
+        android:enabled="true"
+        android:icon="?android:attr/actionModeCutDrawable"
+        android:title="Your Classes"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_five"
+        android:enabled="true"
+        android:icon="@android:drawable/radiobutton_on_background"
+        android:title="Me"
+        app:showAsAction="ifRoom" />
+</menu>

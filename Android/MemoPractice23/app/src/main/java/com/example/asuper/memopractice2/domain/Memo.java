@@ -112,6 +112,6 @@ public class Memo {
     }
 
     public byte[] toBytes(){
-        return toString().getBytes(); // 문자열에서 바이트배열로 변환
+        return toString().getBytes();
     }
 }
